@@ -1,0 +1,3 @@
+1.完成Header区域，使用的是Mint-UI的Header组件
+2.制作底部的Tabbar区域，使用的是MUI的Tabbar.html
+3.
