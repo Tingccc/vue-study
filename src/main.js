@@ -1,8 +1,8 @@
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
-import App from './App'
-import router from './router'
+import App from './App.vue'
+import router from './router/index.js'
 
 import MintUI from 'mint-ui'
 import 'mint-ui/lib/style.css'
@@ -16,6 +16,9 @@ Vue.http.options.emulateJSON = true;
 // 引入mui
 import './assets/mui/css/mui.min.css'
 import './assets/mui/css/icons-extra.css'
+
+import VuePreview from 'vue-preview'
+Vue.use(VuePreview)
 
 import moment from 'moment'
 Vue.filter('dateFormat', function (dateStr, pattern = "YYYY-MM-DD HH:mm:ss") {

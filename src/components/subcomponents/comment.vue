@@ -4,9 +4,9 @@
         <textarea placeholder="请输入要评论的内容（最多120字）" maxlength="120" v-model="msg"></textarea>
         <mt-button type="primary" size="large" @click="postComment">发表评论</mt-button>
         <div class="cmt-list">
-            <div class="cmt-item" v-for="(item,i) in commentList" :key="item.add_time">
+            <div class="cmt-item" v-for="(item,i) in commentList" :key="i">
                 <div class="cmt-title">                
-                    第{{i+1}}楼&nbsp;用户：{{item.user_name}} &nbsp;发表时间：{{item.add_time | dateFormat}}
+                    第{{i+1}}楼&nbsp;用户：{{item.user_name}} &nbsp;发表时间：{{item.add_time | dateFormat }}
                 </div>
                 <div class="cmt-body">
                     {{item.content=='undefined'?'没啥内容':item.content}}
